@@ -1,14 +1,24 @@
+import HomeSectionOne from '../components/HomePage/HomeSectionOne';
+import PropTypes from 'prop-types';
+import HomeSectionTwo from '../components/HomePage/HomeSectionTwo';
 
 const HomePage = () => {
   return (
-    <div className="container mx-auto mt-8">
-      <h1 className="text-3xl font-semibold text-gray-800 mb-4">Welcome to Fabriqua Tiles</h1>
-      <p className="text-gray-600">
-        We provide high-quality tiles for your construction and design needs. Explore our wide range
-        of products and discover the perfect tiles for your projects.
-      </p>
+    <div className="mx-auto">
+      <HomeSectionOne
+        title="Welcome to Fabriqua"
+        text="Explore our high-quality tiles for your construction and design needs. Discover the perfect tiles for your projects."
+      />
+      <HomeSectionTwo />
+
     </div>
   );
+};
+
+HomePage.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  backgroundImageUrl: PropTypes.string.isRequired,
 };
 
 export default HomePage;
