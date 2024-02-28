@@ -2,7 +2,7 @@ import QuartzImage from '../assets/quartz.png';
 
 const ContactPage = () => {
   return (
-    <div>
+    <div className='mt-[100px]'>
       <div className="bg-cover bg-center h-[500px] flex items-center justify-center" style={{ backgroundImage: `url(${QuartzImage})` }}>
         <h1 className="text-white text-6xl font-bold">Contact Us</h1>
       </div>
