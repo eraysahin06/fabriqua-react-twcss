@@ -1,15 +1,17 @@
 import HomeSectionOne from '../components/HomePage/HomeSectionOne';
 import PropTypes from 'prop-types';
 import HomeSectionTwo from '../components/HomePage/HomeSectionTwo';
+import HomeSectionThree from '../components/HomePage/HomeSectionThree';
 
 const HomePage = () => {
   return (
     <div className="mx-auto">
       <HomeSectionOne
         title="Welcome to Fabriqua"
-        text="Explore our high-quality tiles for your construction and design needs. Discover the perfect tiles for your projects."
+        text="As a global importer and nationwide distributor, we specialize in offering premium-quality porcelain tiles, ensuring unparalleled products and services to our clients."
       />
       <HomeSectionTwo />
+      <HomeSectionThree />
 
     </div>
   );
