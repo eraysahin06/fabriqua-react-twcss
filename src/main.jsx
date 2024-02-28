@@ -4,6 +4,8 @@ import { createRoot } from 'react-dom/client';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import './index.css';
+import Footer from './components/Footer';
+import ProductsPage from './pages/ProductsPage';
 
 // eslint-disable-next-line react-refresh/only-export-components
 const AppRoot = () => (
@@ -13,7 +15,9 @@ const AppRoot = () => (
           <Routes>
             <Route path="*" element={<p>Path not resolved</p>} />
             <Route path="/" element={<HomePage />} />
+            <Route path="/products" element={<ProductsPage />} />
           </Routes>
+          <Footer />
     </Router>
   </React.StrictMode>
 );

@@ -2,6 +2,7 @@ import HomeSectionOne from '../components/HomePage/HomeSectionOne';
 import PropTypes from 'prop-types';
 import HomeSectionTwo from '../components/HomePage/HomeSectionTwo';
 import HomeSectionThree from '../components/HomePage/HomeSectionThree';
+import HomeSectionFour from '../components/HomePage/HomeSectionFour';
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       />
       <HomeSectionTwo />
       <HomeSectionThree />
+      <HomeSectionFour />
 
     </div>
   );

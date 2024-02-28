@@ -27,12 +27,12 @@ const Navbar = () => {
 
   const navbarStyle = {
     height: scrolling ? '80px' : '120px',
-    backgroundColor: scrolling ? (isHomePage ? 'rgba(255, 255, 255, 0.8)' : 'transparent') : 'transparent',
+    backgroundColor: isHomePage ? (scrolling ? 'rgba(255, 255, 255, 0.8)' : 'transparent') : 'white',
     boxShadow: scrolling && isHomePage ? '0 2px 4px rgba(0, 0, 0, 0.1)' : 'none',
-    borderRadius: !scrolling ? '20px' : '0',
+    borderRadius: !scrolling && isHomePage ? '20px' : '0',
   };
 
-  const linkStyle = scrolling ? 'text-gray-700 hover:text-black' : 'text-gray-200 hover:text-black';
+  const linkStyle = isHomePage ? (scrolling ? 'text-gray-700 hover:text-black' : 'text-gray-200 hover:text-black') : 'text-gray-700 hover:text-black';
 
   const handleToggleMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -49,7 +49,6 @@ const Navbar = () => {
           <Link to="/" className={`text-xl font-semibold ${linkStyle} mr-4 rounded-full`} onClick={closeMobileMenu}>
             F A B R I Q U A
           </Link>
-          {/* Hamburger menu icon for small screens */}
           <div className="md:hidden">
             {mobileMenuOpen ? (
               <FaTimes className={`text-xl cursor-pointer ${linkStyle}`} onClick={handleToggleMenu} />
@@ -57,7 +56,6 @@ const Navbar = () => {
               <FaBars className={`text-xl cursor-pointer ${linkStyle}`} onClick={handleToggleMenu} />
             )}
           </div>
-          {/* Navigation links for medium and large screens */}
           <div className="hidden md:flex space-x-4">
             <Link to="/products" className={linkStyle} onClick={closeMobileMenu}>
               Products
@@ -69,17 +67,16 @@ const Navbar = () => {
               Contact
             </Link>
           </div>
-          {/* Mobile menu for small screens */}
           {mobileMenuOpen && (
             <div className="md:hidden absolute top-16 right-4 bg-gray-700 text-white p-4 rounded-md">
               <div className="flex flex-col items-center justify-center">
-                <Link to="/products" className='hover:text-gray-300' onClick={closeMobileMenu}>
+                <Link to="/products" className="hover:text-gray-300" onClick={closeMobileMenu}>
                   Products
                 </Link>
-                <Link to="/about" className='hover:text-gray-300' onClick={closeMobileMenu}>
+                <Link to="/about" className="hover:text-gray-300" onClick={closeMobileMenu}>
                   About Us
                 </Link>
-                <Link to="/contact" className='hover:text-gray-300' onClick={closeMobileMenu}>
+                <Link to="/contact" className="hover:text-gray-300" onClick={closeMobileMenu}>
                   Contact
                 </Link>
               </div>
