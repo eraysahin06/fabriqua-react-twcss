@@ -6,6 +6,8 @@ import HomePage from './pages/HomePage';
 import './index.css';
 import Footer from './components/Footer';
 import ProductsPage from './pages/ProductsPage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
 // eslint-disable-next-line react-refresh/only-export-components
 const AppRoot = () => (
@@ -16,6 +18,8 @@ const AppRoot = () => (
             <Route path="*" element={<p>Path not resolved</p>} />
             <Route path="/" element={<HomePage />} />
             <Route path="/products" element={<ProductsPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
           <Footer />
     </Router>

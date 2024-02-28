@@ -32,7 +32,11 @@ const Navbar = () => {
     borderRadius: !scrolling && isHomePage ? '20px' : '0',
   };
 
-  const linkStyle = isHomePage ? (scrolling ? 'text-gray-700 hover:text-black' : 'text-gray-200 hover:text-black') : 'text-gray-700 hover:text-black';
+  const getLinkStyle = (path) => {
+    const isActive = location.pathname === path;
+    const baseStyle = isHomePage ? (scrolling ? 'text-gray-700 hover:text-black' : 'text-gray-200 hover:text-black') : 'text-gray-700 hover:text-black';
+    return isActive ? `${baseStyle} font-bold text-black` : baseStyle;
+  };
 
   const handleToggleMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -46,24 +50,24 @@ const Navbar = () => {
     <nav className="flex items-center justify-center z-20 fixed top-0 left-0 right-0" style={navbarStyle}>
       <div className="mx-auto px-4">
         <div className="flex justify-between items-center h-full">
-          <Link to="/" className={`text-xl font-semibold ${linkStyle} mr-4 rounded-full`} onClick={closeMobileMenu}>
+          <Link to="/" className={`text-xl font-semibold ${getLinkStyle('/')} mr-4 rounded-full`} onClick={closeMobileMenu}>
             F A B R I Q U A
           </Link>
           <div className="md:hidden">
             {mobileMenuOpen ? (
-              <FaTimes className={`text-xl cursor-pointer ${linkStyle}`} onClick={handleToggleMenu} />
+              <FaTimes className={`text-xl cursor-pointer ${getLinkStyle('/')}`} onClick={handleToggleMenu} />
             ) : (
-              <FaBars className={`text-xl cursor-pointer ${linkStyle}`} onClick={handleToggleMenu} />
+              <FaBars className={`text-xl cursor-pointer ${getLinkStyle('/')}`} onClick={handleToggleMenu} />
             )}
           </div>
           <div className="hidden md:flex space-x-4">
-            <Link to="/products" className={linkStyle} onClick={closeMobileMenu}>
+            <Link to="/products" className={getLinkStyle('/products')} onClick={closeMobileMenu}>
               Products
             </Link>
-            <Link to="/about" className={linkStyle} onClick={closeMobileMenu}>
+            <Link to="/about" className={getLinkStyle('/about')} onClick={closeMobileMenu}>
               About Us
             </Link>
-            <Link to="/contact" className={linkStyle} onClick={closeMobileMenu}>
+            <Link to="/contact" className={getLinkStyle('/contact')} onClick={closeMobileMenu}>
               Contact
             </Link>
           </div>
