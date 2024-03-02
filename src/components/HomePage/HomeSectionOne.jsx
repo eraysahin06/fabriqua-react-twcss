@@ -19,7 +19,7 @@ const HomeSectionOne = ({ title, text }) => {
         backgroundSize: 'cover',
       }}
     >
-      <div className="absolute inset-0 bg-blue-800 opacity-60"></div>
+      <div className="absolute inset-0 bg-black opacity-60"></div>
       <div className="text-center mx-auto max-w-[600px] h-full flex flex-col justify-center items-center relative z-10 text-white px-4">
         <h2 className="text-6xl font-bold mb-6">{title}</h2>
         <p className="text-xl">{text}</p>

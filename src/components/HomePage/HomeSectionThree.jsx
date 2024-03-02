@@ -2,7 +2,7 @@ import MarbleTexture from '../../assets/quartz.png';
 
 const HomeSectionThree = () => {
   return (
-    <section className="bg-blue-800 py-16 px-16 max-w-screen-xl mx-auto text-white">
+    <section className="bg-gray-500 py-16 px-16 max-w-screen-xl mx-auto text-white">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
