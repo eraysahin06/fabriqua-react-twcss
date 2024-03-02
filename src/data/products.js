@@ -1,4 +1,3 @@
-// Import product images (Assuming you have images named Product1.jpg to Product25.jpg in your assets folder)
 import Product1 from '../assets/products/nickelblue-fq-0001.jpg';
 import Product2 from '../assets/products/capri-ivory-matte-fq-0002.jpg';
 import Product3 from '../assets/products/nano-ultra-white-fq-0003.jpg';

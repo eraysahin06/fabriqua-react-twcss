@@ -57,6 +57,7 @@ const ProductsPage = () => {
           <option value="">All</option>
           <option value="Matte">Matte</option>
           <option value="Polished">Polished</option>
+          <option value="Semi">Semi</option>
         </select>
       </div>
       <motion.div
