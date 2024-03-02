@@ -4,7 +4,7 @@ const ContactPage = () => {
   return (
     <div className='mt-[100px]'>
       <div className="bg-cover bg-center h-[500px] flex items-center justify-center" style={{ backgroundImage: `url(${QuartzImage})` }}>
-        <h1 className="text-white text-6xl font-bold">Contact Us</h1>
+        <h1 className="text-black text-6xl font-bold">Contact Us</h1>
       </div>
       <div className="max-w-screen-xl mx-auto px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">

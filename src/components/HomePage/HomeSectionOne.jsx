@@ -21,8 +21,8 @@ const HomeSectionOne = ({ title, text }) => {
     >
       <div className="absolute inset-0 bg-blue-800 opacity-60"></div>
       <div className="text-center mx-auto max-w-[600px] h-full flex flex-col justify-center items-center relative z-10 text-white px-4">
-        <h2 className="text-4xl font-bold mb-6">{title}</h2>
-        <p className="text-lg">{text}</p>
+        <h2 className="text-6xl font-bold mb-6">{title}</h2>
+        <p className="text-xl">{text}</p>
         <button
           className="mt-8 flex items-center"
           onClick={handleScrollDown}
