@@ -1,4 +1,4 @@
-import QuartzImage from '../assets/quartz.png';
+import QuartzImage from '../assets/about-ming.jpg';
 
 const AboutPage = () => {
   return (
