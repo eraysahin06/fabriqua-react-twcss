@@ -14,7 +14,7 @@ const HomeSectionFour = () => {
           <span className="text-blue-800 font-semibold text-lg">+1 647 970 1905</span>
         </div>
         <p className="text-gray-700 mt-4">
-          Address: 123 Tile Street, Toronto, ON, Canada
+          Address: 8470 Highway 50, Brampton, ON, L6T 0A5
         </p>
         <Link to="/contact" className="mt-6 inline-block bg-blue-800 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-900 transition-colors">
           Contact Us

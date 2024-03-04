@@ -1,5 +1,7 @@
-import FabriquaLogo from '../../assets/fabriqua-logo.jpeg';
-import Quartz from '../../assets/quartz.png';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import FabriquaLogo from "../../assets/fabriqua-logo.jpeg";
+import Quartz from "../../assets/qrtz.jpg";
 
 const HomeSectionTwo = () => {
   return (
@@ -10,13 +12,18 @@ const HomeSectionTwo = () => {
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
             <h2 className="text-3xl font-bold mb-4 max-w-md">About Fabriqua</h2>
             <p className="text-gray-700 max-w-md">
-              Fabriqua is a leading provider of high-quality tiles for various construction and design projects. With a commitment to excellence and innovation, we offer a wide range of tiles to meet the diverse needs of our clients. Our modern and stylish tiles are designed to elevate the aesthetics of any space.
+              Fabriqua is a leading provider of high-quality tiles for various
+              construction and design projects. With a commitment to excellence
+              and innovation, we offer a wide range of tiles to meet the diverse
+              needs of our clients. Our modern and stylish tiles are designed to
+              elevate the aesthetics of any space.
             </p>
           </div>
           <div className="md:w-1/2">
-            <img
+            <LazyLoadImage
               src={FabriquaLogo}
               alt="fabriqua logo"
+              effect="blur"
               className="w-full max-w-md max-h-96 rounded-md shadow-lg border-black border-xl border"
             />
           </div>
@@ -25,18 +32,24 @@ const HomeSectionTwo = () => {
         {/* Second Row: Text on the left, image on the right */}
         <div className="flex flex-col md:flex-row items-center mt-10">
           <div className="md:w-1/2 mb-4 md:mb-0 md:pr-8">
-            {/* Adjusted padding for both small and medium/large screens */}
-            <img
+            <LazyLoadImage
               src={Quartz}
               alt="fabriqua logo"
+              effect="blur"
               className="w-full max-w-md max-h-96 rounded-md shadow-lg border-black border-xl border"
             />
           </div>
           <div className="md:w-1/2 mt-4">
-            {/* Adjusted padding for both small and medium/large screens */}
-            <h2 className="text-3xl font-bold mb-4 max-w-md">About Fabriqua</h2>
+            <h2 className="text-3xl font-bold mb-4 max-w-md">
+              Explore Our Tile Collection
+            </h2>
             <p className="text-gray-700 max-w-md mb-4">
-              Fabriqua is a leading provider of high-quality tiles for various construction and design projects. With a commitment to excellence and innovation, we offer a wide range of tiles to meet the diverse needs of our clients. Our modern and stylish tiles are designed to elevate the aesthetics of any space.
+              Fabriqua is your go-to source for an extensive range of tiles,
+              catering to both wholesale and retail customers. As a leading tile
+              wholesaler, we pride ourselves on offering a variety of styles,
+              sizes, and finishes to suit any project. From contemporary designs
+              to classic looks, our tiles are carefully selected to ensure
+              top-notch quality and aesthetics for your spaces.
             </p>
           </div>
         </div>

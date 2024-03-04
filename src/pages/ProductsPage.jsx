@@ -105,7 +105,6 @@ const ProductsPage = () => {
                 </span>
               </p>
               <p className="mb-2">Type: {selectedProduct.type}</p>
-              <p>Details: {selectedProduct.details}</p>
             </div>
           </div>
         )}

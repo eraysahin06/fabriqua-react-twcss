@@ -7,10 +7,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-gray-700">© 2024 Fabriqua. All rights reserved.</p>
-            <p className="text-gray-700">Contact: +1 647 970 1905 | info@fabriqua.com</p>
+            <p className="text-gray-700">Contact: +1 647 970 1905 | info@fabriqua.ca</p>
           </div>
           <div className="flex items-center space-x-6">
-            <a href="https://www.linkedin.com/company/fabriqua-tiles" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
               <FaLinkedinIn size="1.5em" />
             </a>
             <nav className="flex space-x-4">

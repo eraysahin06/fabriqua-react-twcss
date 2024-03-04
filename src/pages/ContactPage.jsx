@@ -14,8 +14,9 @@ const ContactPage = () => {
             We&rsquo;re eager to connect with you! Whether you are seeking information about our products, require support with your project, or simply want to drop a line, feel free to get in touch.
             </p> 
             <p className="text-lg">
-              <strong>Email:</strong> info@fabriqua.com<br />
-              <strong>Phone:</strong> +1 647 970 1905
+              <strong>Email:</strong> info@fabriqua.ca<br />
+              <strong>Phone:</strong> +1 647 970 1905<br />
+              <strong>Address:</strong> 8470 Highway 50, Brampton, ON, L6T 0A5
             </p>
           </div>
           <div>
