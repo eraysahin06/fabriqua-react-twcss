@@ -11,8 +11,8 @@ const ContactPage = () => {
           <div>
             <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
             <p className="text-lg leading-relaxed mb-8">
-              We&rsquo;d love to hear from you! Whether you have a question about our products, need assistance with your project, or just want to say hello, feel free to reach out to us.
-            </p>
+            We&rsquo;re eager to connect with you! Whether you are seeking information about our products, require support with your project, or simply want to drop a line, feel free to get in touch.
+            </p> 
             <p className="text-lg">
               <strong>Email:</strong> info@fabriqua.com<br />
               <strong>Phone:</strong> +1 647 970 1905
