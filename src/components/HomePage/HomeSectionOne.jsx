@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Quartz from '../../assets/quartz.png';
+import Quartz from '../../assets/home-photo.jpg';
 import { BsChevronDown } from 'react-icons/bs';
 
 const HomeSectionOne = ({ title, text }) => {

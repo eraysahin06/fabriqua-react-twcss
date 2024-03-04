@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Product from '../components/ProductsPage/Product';
 import products from '../data/products';
 import { FaTimes } from 'react-icons/fa';
-import QuartzImage from '../assets/quartz.png'; // Import the image
+import QuartzImage from '../assets/products.jpg';
 
 const containerVariants = {
   hidden: { opacity: 0 },
