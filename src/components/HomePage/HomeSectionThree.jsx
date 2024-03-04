@@ -1,4 +1,4 @@
-import MarbleTexture from '../../assets/quartz.png';
+import MarbleTexture from '../../assets/quartz-min.jpg';
 import { Link } from 'react-router-dom';
 
 const HomeSectionThree = () => {

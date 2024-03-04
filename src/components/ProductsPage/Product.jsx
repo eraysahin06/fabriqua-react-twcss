@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
+import { FaEye } from "react-icons/fa";
+
 const Product = ({ product, onView }) => {
   return (
     <div className="bg-white shadow-md rounded-md overflow-hidden">
@@ -21,10 +23,10 @@ const Product = ({ product, onView }) => {
         </p>
         <p className="text-sm text-gray-600">Type: {product.type}</p>
         <button
-          className="mt-2 px-4 py-2 border border-black text-black bg-white rounded-md"
+          className="mt-2 px-4 py-2 border text-center border-black text-black bg-white rounded-md"
           onClick={() => onView(product)}
         >
-          Details
+          <FaEye />
         </button>
       </div>
     </div>
